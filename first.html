@@ -1,0 +1,245 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Website</title>
+    <style>
+        body {
+            background: rgb(255,220,35);
+            background: linear-gradient(90deg, rgba(255,220,35,1) 42%, rgba(248,225,225,1) 52%);
+            margin: 0;
+        }
+        h1 {
+            font-size: 25px;
+        }
+        .first {
+            background-image: url(header.jpg);
+            width: auto;
+            min-width: 100%;
+            height: 50px;
+            top: 0px;
+            padding: 15px;
+            border-style: solid;
+            border-width: 1px;
+        }
+        .photo {
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            width: 55%;
+            border-left-style: outset;
+            border-right-style: inset;
+            border-bottom-style: inset;
+            border-width: 4px;
+            border-color: brown;
+        }
+        .text {
+            position: absolute;
+            top: 24%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            font-family:'Lucida Sans';
+        }
+        .bottom {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background: rgb(104,222,221);
+            background: linear-gradient(90deg, rgba(104,222,221,1) 45%, rgba(106,235,90,1) 54%);
+            height: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            min-width: 55%;
+            width: 54%;
+            border-radius: 5px;
+            border-style: groove;
+            border-color: blue;
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
+              0 2px 10px 0 rgba(0,0,0,0.07);
+        }
+        .uni {
+            background-color: darkgray;
+            display: inline-block;
+            width: 40%;
+            height: 300px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .isfar {
+            margin:5px;
+            min-width: auto;
+            width: 90%;
+            min-height: 20%;
+            height: auto;
+            padding-left: 8px;
+        }
+        .architecture {
+            margin:5px;
+            min-width: auto;
+            width: 90%;
+            min-height: 20%;
+            height: auto;
+            padding-left: 9px;
+        }
+        .faculty {
+            background-color: darkgray;
+            display: inline-block;
+            width: 40%;
+            height: 310px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        p {
+            font-size: 12px;
+            font-style: oblique;
+            font-family: monospace;
+            margin-left: 15px;
+            margin-bottom: 5px;
+            margin-right: 5px;
+        }
+        .button {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            align-items: center;
+            border: none;
+            appearance: auto;
+            cursor: pointer;
+            display: flex;
+            color: rgb(0, 0, 0);
+            font-family: monospace;       
+            border-radius: 7px;
+            margin-top: 5px;
+            height: 40px;
+            transition: box-shadow .10s,transform .10s;
+            background: rgb(57,154,222);
+            background: linear-gradient(90deg, rgba(57,154,222,1) 14%, rgba(65,151,212,1) 43%, rgba(76,99,215,1) 65%);
+            padding-left: 16px;
+            padding-right: 24px
+        }
+        .mail {
+            width: 650px;
+            max-width: 100%;
+            margin: 20px auto 25px auto;
+        }
+        .blank, textarea {
+            padding: 20px;
+            border: 0;
+            width: 80%;
+            font: size 1rem;;
+            background-color: #414040;
+            color: white;
+            border-radius: 5px;
+        }
+        .subs {
+            width: 30%;
+            background-color: #a45125;
+            padding: 10px;
+            color: aliceblue;
+        }
+        .button1 {
+            background-image: linear-gradient(#0dccea, #0d70ea);
+            border: 0;
+            border-radius: 4px;
+            box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            font-family: Montserrat,sans-serif;
+            font-size: .9em;
+            padding: 10px 15px;
+            text-align: center;
+        }
+        #single-p {
+                color: blueviolet;
+        }
+        .italic-text {
+            font-style: italic;
+            font-family: 'Inconsolata', monospace;
+            font-weight: 700;
+        }
+        a {
+            font-family: "Dank Mono", ui-monospace, monospace;
+            font-size: larger;
+            margin-top: 1ch;
+            line-height: 1.35;
+            max-inline-size: 40ch;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="first"></div>
+    <div class="second">
+        <div class="top">
+            <img class="photo" src="ph1.jpg" alt="" width="600" height="170">
+            <div class="text">Atilla's Biography</div>
+        </div>
+        <div class="bottom">
+            <div class="uni">
+                <img class="isfar" src="isfar.jpg">
+                <p>You can tell when someone is really good as the staff here all come out to catch the end of the show. You turn around and there are 10 of them stood there watching...</p>
+                <button class="button" onclick="location.href='https://www.isfarsarabski.com/en/isfar'">More...</button>
+            </div>
+            <div class="faculty">
+                <img class="architecture" src="cooking.jpg">
+                <p>5 arkadaşı ile kurduğu Velotürk ile, sosyal sorumluluk projeleri geliştirip, Türkiye genelinde ilk öğretim düzeyindeki çocuklara bisiklet dağıtımları yapıyorlar...</p>
+                <button class="button" onclick="location.href='https://www.ardaninmutfagi.com/arda-turkmen-kimdir'">More...</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="third">
+        <div class="mail">
+            <form action="mailto:bossherifli@gmail.com" method="post">
+                <h1>Contact Form</h1> <br><br>
+                <input type="text" name="subject" placeholder="Subject" class="blank" /> <br />
+                    
+                <br />
+                <input type="email" name="email" placeholder="Email" class="blank" /> <br />
+                    
+                <br />
+                <textarea name="message" placeholder="Type a Message..." cols="40" rows="7"></textarea> <br />
+                <br>
+                <div class="subs">
+                    <label for="subscribe">Subscribe to newsletter</label>
+                    <input type="checkbox" name="subscribe" />
+                </div>
+                <br>
+                <button type="button" class="button1" >Send a Message</button>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <p id="single-p">
+        Each person has his own skills, even if he thinks the opposite, he forms them in himself. 
+        I think I acquired these skills by working on them. 
+        And now they have become my hobbies.
+        <table>
+            <tr>
+                <td>Voleyball</td>
+                <td>&#9956 &#9956 &#9956 &#9956</td>
+            </tr>
+            <tr>
+                <td>Tennis</td>
+                <td>&#9956 &#9956 &#9956</td>
+            </tr>
+            <tr>
+                <td>Basketball</td>
+                <td>&#9956</td>
+            </tr>
+        </table>
+        <a href="https://github.com/AtillaTegin">Visit My Github</a> <br>
+        <a href="card.html">My Digital Card</a> <br />
+        <a href="file:///C:/Users/Hp/OneDrive%20-%20ADA%20University/Desktop/Hw/index.html">Weather App</a>
+    </p>
+</body>
+</html>
